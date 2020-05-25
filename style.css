@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.fullscreen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.animation-window{
+    overflow: hidden;
+    
+}
+.lottie-animation{
+    opacity: 1;
+    z-index: 4;
+}
+.background-light{
+    opacity: 0.1;
+    z-index: 1;
+}
+.background-dark{
+    opacity: 0;
+    z-index: 2;
+}
+.foreground{
+    object-fit: cover;
+    opacity:1;
+    z-index: 4;
+}
+.city-isometric{
+    z-index: 3;
+}
+
+#CITY-ISOMETRIC{
+    transform: translateY(11%);
+    opacity: 0;
+    animation: fade 1s 41s forwards,
+               fade 1s 47s reverse forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.lottie-player{
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.animation-text{
+    top: 5%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 52px;
+    z-index: 6;
+}
+.black-text{
+    color:black;
+    padding: 0 50px;
+}
+.white-text{
+    color: white;
+    padding: 0 50px;
+}
+
+#text-1{
+    opacity: 0;
+}
+#text-2{
+    opacity: 0;
+}
+#text-3{
+    opacity: 0;
+}
+#text-4{
+    opacity: 0;
+}
+#text-5{
+    opacity: 0;
+}
+#text-6{
+    opacity: 0;
+}
+#text-7{
+    opacity: 0;
+}
+#text-8{
+    opacity: 0;
+}
+#text-9{
+    opacity: 0;
+}
+#text-10{
+    opacity: 0;
+}
+#text-11{
+    opacity: 0;
+}
+#text-12{
+    opacity: 0;
+}
+#Car_1{
+    transform-origin: center;
+}
+#Car_2{
+    transform-origin: center;
+}
+#Car_3{
+    opacity: 0;
+    transform-origin: center;
+}
+#Car_4{
+    transform-origin: center;
+}
+#Car_5{
+    transform-origin: center;
+}
+#Lorry_1{
+    opacity: 0;
+    transform-origin: center;
+}
+#Lorry_2{
+    opacity: 0;
+    transform-origin: center;
+}
+.ibeto-logo-animation{
+    width:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center;
+    transform: translate(-50%,-50%);
+    perspective: 10000px;
+    opacity: 0;
+    z-index: 10;
+}
+
+#Back_Wing{
+    transform-origin:40% 71%;
+    animation: LeftWingAnimate 3s ease-in-out infinite;
+    
+}
+@keyframes LeftWingAnimate {
+    0%{ transform: rotate3d(1,0,0,80deg);}
+    50%{ transform: rotate3d(1,0,0,20deg);}
+    100%{ transform: rotate3d(1,0,0,80deg);}
+}
+#Front_Wing{
+    transform-origin: 40% 71%;
+    animation: RightWingAnimate 3s ease-in-out infinite;
+}
+@keyframes RightWingAnimate {
+    0%{ transform: rotate3d(1,0,0,-60deg);}
+    50%{ transform: rotate3d(1,0,0,-20deg);}
+    100%{ transform: rotate3d(1,0,0,-60deg);}
+}
+
+@media only screen and (max-width: 800px) {
+    .animation-text{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .animation-text{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .lottie-player{
+        width: 1500px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .lottie-player{
+        width: 1200px;
+    }
+}
