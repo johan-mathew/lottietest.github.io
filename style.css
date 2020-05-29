@@ -57,6 +57,7 @@
 
 }
 .animation-text{
+    opacity:0;
     top: 5%;
     position: absolute;
     text-align: center;
